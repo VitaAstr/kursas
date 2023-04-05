@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Užduoties atlikimas"> 
+    <title>Vita 2 užduotis</title>
+    <!-- II būdas lentelės rėmui aprašyti: --> 
+    <!--<style type="text/css">  
+        table, tr, th, td {
+           border:1px solid black;
+           }
+    </style>--> 
+     <!-- III būdas lentelės rėmui aprašyti: --> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Orginalus paveikslėlio dydis --> 
+    <img src="https://www.vilniuscoding.lt/wp-content/themes/vcs/assets/img/logo-01.svg" alt="VCS Logotipas" width="200px heigth="52px>
+    <h2>About</h2>
+    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br>
+    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not <br>
+    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <h2>Projects</h2>
+    Featured
+    Project 1
+    Project 2
+    Latest
+    Project 4
+    Project5
+    <h2>Festival Schedule</h2> 
+    <table>    
+        <tr>
+          <th> Time</th>
+           <th> Topic</th>
+         </tr>   <!---tr table row-->
+        <tr>
+            <td>9:00-12:00</td>
+            <td>Registration</td>
+        </tr>   <!---tr table row-->
+        <tr>
+            <td>12:00-14:00</td>
+            <td>Keynote</td>    
+        </tr> 
+   
+    </table>
+
+    <h2>Sign Up!</h2>
+   
+    <p><form action="/action_page.php">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"value="Enter your Name"><br>
+    </form>
+    <form action="/action_page.php">
+        <label for="fname">Email:</label>
+        <input type="text" id="fname" name="fname"value="Enter your Email"><br><br>
+    </form>
+    </p>
+    
+      
+      <label for="cars">Location:</label>
+      <select name="cars" id="cars" form="carform">
+        <option value="Choose city">Choose city</option>
+      </select>
+<br>
+Gender:  
+
+<input type="radio" id="female" name="fav_language" value="Female">
+<label for="female">Female</label>
+<input type="radio" id="male" name="fav_language" value="Male">
+<label for="male">Male</label><br>
+        <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+    
+          <h1>Sign Up</h1>
+          <hr>
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="fname"value="Enter your Name"><br>
+          <label for="email">Email:</label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+         <br>
+        
+          <form action="/action_page.php" id="usrform">
+            Message: <br>
+          <textarea rows="10" cols="50" name="comment" form="usrform">
+          Your message</textarea>
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
