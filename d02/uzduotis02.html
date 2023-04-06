@@ -16,19 +16,27 @@
 </head>
 
 <body>
-    <!-- Orginalus paveikslėlio dydis --> 
-    <img src="https://www.vilniuscoding.lt/wp-content/themes/vcs/assets/img/logo-01.svg" alt="VCS Logotipas" width="200px heigth="52px>
+    <!-- Orginalus paveikslėlio dydis width="200" heigth="52--> 
+    <img src="https://www.vilniuscoding.lt/wp-content/themes/vcs/assets/img/logo-01.svg" alt="VCS Logotipas"width="400" heigth="52">
+    
+          
     <h2>About</h2>
     <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text <br>
     ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not <br>
     only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     <h2>Projects</h2>
-    Featured
-    Project 1
-    Project 2
-    Latest
-    Project 4
-    Project5
+    <ul> <!-- punktai su papukčiais --> 
+      <li>Featured </li> <br>
+      <ul>
+        <li> <a href="project1.html">Project 1</a></li>
+        <li> <a href="project2.html">Project 2</a></li><br>
+    </ul>
+      <li>Latest</li> <br>
+    <ul>
+      <li> <a href="project4.html">Project 4</a></li>
+      <li> <a href="project5.html">Project 5</a></li>
+    </ul>
+  </ul>
     <h2>Festival Schedule</h2> 
     <table>    
         <tr>
@@ -50,45 +58,32 @@
    
     <p><form action="/action_page.php">
         <label for="fname">Name:</label>
-        <input type="text" id="fname" name="fname"value="Enter your Name"><br>
+        <input type="text" id="fname" name="fname"value="Enter your Name" size="13"><br>
     </form>
     <form action="/action_page.php">
         <label for="fname">Email:</label>
-        <input type="text" id="fname" name="fname"value="Enter your Email"><br><br>
-    </form>
-    </p>
-    
-      
-      <label for="cars">Location:</label>
-      <select name="cars" id="cars" form="carform">
+        <input type="text" id="fname" name="fname"value="Enter your Email" size="13">
+        </form>
+      <label for="location">Location:</label>
+      <select name="location" id="location" form="locationform">
         <option value="Choose city">Choose city</option>
+        <option value="Vilnius">Vilnius</option>
+        <option value="Kaunas">Kaunas</option>
       </select>
 <br>
-Gender:  
+    Gender:  
+    <input type="radio" id="female" name="fav_language" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="fav_language" value="Male">
+    <label for="male">Male</label><br>
 
-<input type="radio" id="female" name="fav_language" value="Female">
-<label for="female">Female</label>
-<input type="radio" id="male" name="fav_language" value="Male">
-<label for="male">Male</label><br>
-        <form action="action_page.php" style="border:1px solid #ccc">
-        <div class="container">
-    
-          <h1>Sign Up</h1>
-          <hr>
-          <label for="fname">Name:</label>
-          <input type="text" id="fname" name="fname"value="Enter your Name"><br>
-          <label for="email">Email:</label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-         <br>
-        
-          <form action="/action_page.php" id="usrform">
-            Message: <br>
-          <textarea rows="10" cols="50" name="comment" form="usrform">
-          Your message</textarea>
-          <div class="clearfix">
-            <button type="submit" class="signupbtn">Sign Up</button>
-          </div>
-        </div>
-      </form>
+Message: <br>
+<textarea rows="6" cols="18" name="comment" form="usrform">
+Your message</textarea>
+<div class="clearfix">
+<button type="signup" class="signupbtn">Sign Up</button>
+</p>
+</div>
+</div>     
 </body>
 </html>
