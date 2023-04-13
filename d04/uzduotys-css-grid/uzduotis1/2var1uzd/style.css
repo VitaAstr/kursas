@@ -1,0 +1,61 @@
+html, body {
+    background-color: #ffeead;
+    margin: 5px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffeead;
+}
+
+.container > div:nth-child(1n) {
+    background-color:red;	
+}
+
+.container > div:nth-child(2n) {
+    background-color: blue;
+}
+
+.container > div:nth-child(3n) {
+    background-color: green;
+}
+
+.container > div:nth-child(4n) {
+    background-color: blueviolet;
+}
+
+.container > div:nth-child(5n) {
+    background-color:yellow;
+}
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas:
+    "r r m m"
+    "z v v v"
+    "g g g g";
+}
+
+.raudona {
+    grid-area: r;
+}
+
+.melyna {
+    grid-area: m;
+}
+
+.zalia {
+    grid-area: z;
+}
+
+.violetine {
+    grid-area: v;
+}
+.geltona {
+    grid-area: g;
+}

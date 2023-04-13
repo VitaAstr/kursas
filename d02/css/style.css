@@ -2,3 +2,13 @@ table, th, td {
     border: 1px solid;
   }
   /*jei taikoma visoms lentelėms lape*/
+  button{
+    background-color: blue;
+    color: aliceblue;
+    width: 200px;
+    border-radius: 20px;
+    border:none;
+  }
+   button:hoover {
+    background-color: blueviolet;
+   }
