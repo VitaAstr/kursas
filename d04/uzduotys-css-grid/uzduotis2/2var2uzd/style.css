@@ -26,6 +26,9 @@ html, body {
     background-color: blueviolet;
 }
 
+.container > div:nth-child(5n) {
+    background-color: blueviolet; 
+}
 .container {
     height: 100%;
     display: grid;
@@ -35,7 +38,7 @@ html, body {
     grid-template-areas:
     "r r r r "
     "m m z z"
-    "m m v v";
+    "m m v1 v2";
 }
 
 .raudona {
@@ -50,15 +53,12 @@ html, body {
     grid-area: z;
 }
 
-.violetine {
-    grid-area: v;
-  }
-.violetine 1 {
-    grid-row: 1 / 3;
-    grid-column: 1 ;
-  }
+.violetine1 {
+    grid-column: v1;
+ }
 
-  .violetine2 {
-    grid-row: 1;
-    grid-column: 2 / 4;
-  }
+.violetine2 {
+    grid-column: v2;
+ }
+    
+

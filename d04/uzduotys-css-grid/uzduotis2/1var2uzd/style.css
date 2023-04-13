@@ -25,6 +25,9 @@ html, body {
 .container > div:nth-child(4n) {
     background-color: blueviolet;
 }
+.container > div:nth-child(5n) {
+    background-color: blueviolet;
+}
 
 .container {
     height: 100%;
@@ -47,20 +50,10 @@ html, body {
     grid-column: 3 / -1;
 }
 
-.violetine {
-    grid-column: 3/ -1;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-     
-    /*grid-column: 3/-2;  /*pirma violetine*/
-    /*grid-column: 4/-1; /*galine violetine*/
-    /*KAIP PADARYTI 2 STULPELIUS, O NE IŠTISINIUS?*/
+.violetine1 {
+    grid-column: 3/ -2;
 }
-.violetine-violetine1{
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-  }
-.violetine-violetine2{
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+.violetine2 {
+    grid-column: 4/ -1;
 }
+
