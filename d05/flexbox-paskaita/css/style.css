@@ -1,7 +1,8 @@
 body{
     margin: 0 auto;
     width:100%;
-    display:flex;
+    display:flex;/*flex - turinys juda(tekstas slenka) kartu su ekrano siaurinimu/plėtimu*/
+    /*FLEX BOX VEIKIA TIK ANT TIESIOGINIŲ VAIKŲ*/
     flex-direction:column;
 }
 header, footer {
