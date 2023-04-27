@@ -2,13 +2,14 @@ html, body {
     background-color: #ffeead;
     margin: 5px;
 }
-
-.container > div {
+/*PAPILDYTI*/
+.container > div {border-radius:3px;}
+/*.container > div {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffeead;
-}
+}*/
 
 .container > div:nth-child(1n) {
     background-color:red;	

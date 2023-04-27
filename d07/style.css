@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    background-color: #e9e9e9;  
+}
+
+header {
+    height:86px;
+    background-color: #177cc2;
+    color: white;
+    font-size: 40px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding: 0 100px;
+}
+
+.container-fluid {
+    display:flex;
+    margin:25px 0px;
+    align-items:center;
+}
+
+.box {
+    margin:15px 15px;
+    filter: drop-shadow(0 0 12px #958d8d);
+    width:400px;
+    display:flex;
+    display: block; 
+}
+
+p {
+    padding: 0 30px;
+    background-color:white;
+    align-items:center;
+    font-size: 30px;
+    display:flex;
+}

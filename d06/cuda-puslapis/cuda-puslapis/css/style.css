@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family:"Titilium Web", sans-serif;
+}
+body{
+    margin:0;
+}
+.site-header{
+     background-color: #87509c;
+     position:fixed;
+     width: 100%;
+     display:block;
+}
+.container{
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+    padding: 0 20px;
+}
+.flex-container{
+    display:flex;/*automati6kai poadaro po automatu i eilutes, net nereikia row nustatyti*/
+}
+.site-header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav li{
+    list-style:none;
+}
+.main-nav a {
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 1rem; /*rem tikslas padalintas i6 konteksto. Mano tikslas 6riftas 30px, 30px dalinu is konteksto tevinio elemento dydzio =30/16=1.87 proporcijas dalinam*/
+   margin: 0  5px; /*pagal dizaino šablono failą 17+17+5+5*/
+   padding: 10px 17px;
+}
+.main-nav a:hover, .main-nav a:active{
+    background-color: #643a79;
+    border-radius: 5px;
+}
+.logo{
+    padding: 55px 0;
+}
+/*CTRL/ komentaras pasidaro  */
+
+/* HERO */
+.hero {
+    background-color:#87509c;
+    text-align:center;
+    padding-top: 100px;
+}
+section > .container {
+    padding:120px 0;
+}
+.hero h1 {
+  color: white; /*#f7frea;*/
+  font-size:2.625rem;
+  line-height:1.1428;
+  max-width:843px;
+  margin:0 auto;
+}
+.hero a, .contact .btn {
+    font-size:1.125rem;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #eb7d4b;
+    padding: 20px 82px 25px;
+    border-radius: 5px;
+    border-bottom: 4x solid #c85a40;
+    margin-top: 40px;
+    display:inline-block;
+    cursor:pointer;
+}
+/*SERVICES*/
+.services{
+    background-color: #17c2a4;
+}
+.section-heading{
+    text-align:center;
+    color:#fff;
+}
+.section-heading h2{
+    font-size:2.5rem;
+    letter-spacing:0,1em;
+    text-transform: uppercase;
+}
+.section-heading h2:after{
+    content:"";
+    display:block;
+    width:90px;
+    border-top: 4px solid #14a58c;
+    margin: 22px auto;
+}
+.container a, .container p, .container h3 {
+    font-size:1.125rem;
+    letter-spacing:0.02em;
+}
+.section-heading p {
+    max-width:610px;
+    margin:0 auto;
+    line-height:1.625;
+}
+.service {
+    text-align:center;
+    color:#fff;
+    max-width:200px;
+    margin: 80px auto 0;
+}
+.service h3 {
+    text-transform: uppercase;
+    font-size:700px;
+    font-size:1.5rem;
+}
+.services p{
+    font-size:1rem;
+    line-height:1.5; /*atstumai tarp eilu2i7*/
+    font-weight:;
+}
+/* CONTACT */
+.contact{
+    background-color:  #3c5499;
+    color: #fff;
+}
+.contact .container{
+    padding-bottom:60px;
+}
+.contact .section-heading h2:after{
+border-color:#273a71;
+}
+.contact .section-heading p{
+    max-width:780px;
+}
+.contact .section-content {
+    width: 80%;
+    max-width:860px;
+    margins: 80px auto;
+}
+.contact .section-content .contact-form .input-row {
+    margin-bottom:30px;
+}
+
+.contact .section-content .contact-form .input-row input{
+    padding: 20px 25px;
+    border-radius:5px;
+    border:none;
+    width:calc(50% - 18px);
+    color:#fff;
+    background-color:#273a71;
+}
+
+.contact .section-content .contact-form .input-row input::placeholder,
+.contact .section-content .contact-form textarea::placeholder
+{
+    color:#fff;
+}
+
+.contact .section-content .contact-form .input-row input:first-child {
+    margin-right:16px;
+}
+
+.contact .section-content .contact-form .input-row input:last-child {
+    margin-left:16px;
+}
+
+.contact .section-content .contact-form textarea {
+    border:none;
+    border-radius:5px;
+    width:100%;
+    padding:25px;
+    color:#fff;
+    background-color: #273a71;
+}
+
+.contact .section-content .contact-form .btn-form {
+    background-color:#30bae7;
+    border-color:#299ec5;
+}
+
+.contact .btn {
+    margin: 60px auto 0;
+    display:block;
+    width:300px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color:#344b8e;
+    padding:50px 0;
+}
+
+.footer ul {
+    justify-content: space-around;
+    list-style:none;
+}
+
+.footer ul li a {
+    display:block;
+    padding:5px;
+    color:#fff;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-weight:600;
+    letter-spacing: 0.02em;
+}
+
+.footer ul li a:hover {
+    color:#30bae7;
+}
+
+@media all and (max-width:640px) {
+    .footer-nav .flex-container {
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media all and (max-width:414px) {
+    section > .container {
+        padding:70px 0;
+    }
+
+    h1 {
+        font-size:2.3rem;
+    }
+
+    .section-heading h2{
+        font-size:2.2rem;
+    }
+}
+
+
+
+
+
+
+
